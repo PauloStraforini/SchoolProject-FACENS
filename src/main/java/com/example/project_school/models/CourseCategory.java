@@ -28,4 +28,9 @@ public class CourseCategory {
     public void setName(String name) {
         this.name = name;
     }
+
+    @Override
+    public String toString() {
+        return "CourseCategory [id=" + id + ", name=" + name + "]";
+    }
 }
