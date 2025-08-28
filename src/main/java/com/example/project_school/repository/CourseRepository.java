@@ -17,9 +17,8 @@ public class CourseRepository {
     private EntityManager entityManager;
 
     @Transactional
-    public Course save(Course course) {
-        course = entityManager.merge(course); 
-        return course;
+    public void save(Course course) {
+        course = entityManager.merge(course);
     }
 
     public List<Course> getAll(){
